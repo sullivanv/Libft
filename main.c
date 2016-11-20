@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/20 19:57:40 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/20 20:08:36 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,12 @@ int main()
 	printf("%i\n", ft_strcmp(s3, s4));
 	printf("%i\n", strcmp(s5, s6));
 	printf("%i\n", ft_strcmp(s5, s6));
+
+    printf("\n\n- Test numero 7 - ft_strncmp :\n");
+	printf("%i\n", strncmp(s1, s2, 12));
+	printf("%i\n", ft_strncmp(s1, s2, 12));
+	printf("%i\n", strncmp(s3, s4, 4));
+	printf("%i\n", ft_strncmp(s3, s4, 4));
+	printf("%i\n", strncmp(s5, s6, 2));
+	printf("%i\n", ft_strncmp(s5, s6, 2));
 }

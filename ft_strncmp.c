@@ -6,11 +6,13 @@
 /*   By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/09 04:04:03 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/08/09 04:13:51 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/20 20:06:41 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int i;
 
