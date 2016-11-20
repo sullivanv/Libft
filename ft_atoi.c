@@ -6,13 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:27:36 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/08 22:28:22 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/20 18:11:17 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(char *str)
+int		ft_atoi(const char *str)
 {
 	int i;
 	int nbr;

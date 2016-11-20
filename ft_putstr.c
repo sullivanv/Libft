@@ -6,20 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:28:52 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/08 22:28:59 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/20 17:49:00 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr(char const *s)
 {
-	int	i;
-
-	i = 0;
-	while (*(str + i))
-	{
-		ft_putchar(*(str + i));
-		i++;
-	}
+	write(1, s, ft_strlen(s));
 }

@@ -6,16 +6,18 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:30:43 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/08 22:31:20 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/20 17:53:21 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
   int i;
 
   i = 0;
-  while (str[i])
+  while (s[i])
     i++;
   return (i);
 }
