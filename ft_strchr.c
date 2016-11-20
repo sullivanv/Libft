@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/08 22:24:57 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/09 18:30:43 by suvitiel         ###   ########.fr       */
+/*   Created: 2016/11/09 01:49:59 by suvitiel          #+#    #+#             */
+/*   Updated: 2016/11/09 18:32:25 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-void	*ft_memset(void *s, int c, size_t n)
+char *ft_strchr(const char *s, int c)
 {
-	size_t	count;
-	char	*str;
+	char *str;
 
-	count = 0;
-	str = s;
-	while (count < n)
-	{
-		str[count] =(char)c;
-		count++;
-	}
-	return (s);
+	str = (char*)s;
+	while (*str && *str != c)
+		*str = *(str + 1);
+	return (str);
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	char s[5] = "salut";
+	int c = 'u';
+
+
+	printf("%s\n", ft_strchr(s, c));
+	return (0);
 }
