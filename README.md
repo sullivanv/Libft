@@ -1,6 +1,5 @@
 # Libft
-Librairie 42 - langage : C
-TODO : •
+Librairie 42 - langage : C ------- TODO : •
 
 # - LibC :
 
