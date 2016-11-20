@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/20 18:22:47 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/20 19:57:40 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,18 @@ int main()
 	ft_putnbr(INT_MAX);
 	ft_putchar('\n');
     printf("%i\n", INT_MAX);
+
+	char *s1 = "salut";
+	char *s2 = "salut";
+	char *s3 = "bien";
+	char *s4 = "bzer";
+	char *s5 = "allz";
+	char *s6 = "allb";
+    printf("\n\n- Test numero 6 - ft_strcmp :\n");
+	printf("%i\n", strcmp(s1, s2));
+	printf("%i\n", ft_strcmp(s1, s2));
+	printf("%i\n", strcmp(s3, s4));
+	printf("%i\n", ft_strcmp(s3, s4));
+	printf("%i\n", strcmp(s5, s6));
+	printf("%i\n", ft_strcmp(s5, s6));
 }
