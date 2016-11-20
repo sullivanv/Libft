@@ -1,5 +1,6 @@
 # Libft
 Librairie 42 - langage : C
+TODO : •
 
 # - LibC :
 
@@ -10,7 +11,7 @@ Librairie 42 - langage : C
 • memmove
 • memchr
 • memcmp
-• strlen
+strlen
 • strdup
 • strcpy
 • strncpy
@@ -50,8 +51,8 @@ Librairie 42 - langage : C
 • ft_strtrim
 • ft_strsplit
 • ft_itoa
-• ft_putchar
-• ft_putstr
+ft_putchar 
+ft_putstr
 • ft_putendl
 • ft_putnbr
 • ft_putchar_fd
