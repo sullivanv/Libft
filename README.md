@@ -1,5 +1,5 @@
 # Libft
-Librairie 42 - langage : C ------- TODO : • ------ 13 / 57
+Librairie 42 - langage : C ------- TODO : • ------ 14 / 57
 
 # - LibC :
 
@@ -46,7 +46,7 @@ atoi,
 • ft_strequ,
 • ft_strnequ,
 • ft_strsub,
-• ft_strjoin,
+ft_strjoin,
 • ft_strtrim,
 • ft_strsplit,
 • ft_itoa,
