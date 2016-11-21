@@ -6,22 +6,11 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:30:17 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/08 22:30:18 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 23:42:05 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-
-int	ft_strlen(char const *str)
-{
-  int i;
-
-  i = 0;
-  while (str[i])
-    i++;
-  return (i);
-}
 
 char*	ft_strjoin(char const *s1, char const *s2)
 {

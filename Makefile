@@ -6,7 +6,7 @@
 #    By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/16 08:16:35 by suvitiel          #+#    #+#              #
-#    Updated: 2016/11/21 20:40:07 by suvitiel         ###   ########.fr        #
+#    Updated: 2016/11/21 23:41:01 by suvitiel         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -18,7 +18,7 @@ SRC		=	ft_putchar.c ft_strlen.c \
 			ft_strncmp.c ft_strdup.c \
 			ft_strcpy.c ft_strncpy.c \
 			ft_strcat.c ft_strncat.c \
-			ft_strlcat.c
+			ft_strlcat.c ft_strjoin.c
 RM		= rm -f
 OBJS	= ft_putchar.o ft_strlen.o \
 			ft_putstr.o	ft_atoi.o \
@@ -26,7 +26,7 @@ OBJS	= ft_putchar.o ft_strlen.o \
 			ft_strncmp.o ft_strdup.o \
 			ft_strcpy.o ft_strncpy.o \
 			ft_strcat.o ft_strncat.o \
-			ft_strlcat.o
+			ft_strlcat.o ft_strjoin.o
 CFLAGS	= -Wall -Wextra -Werror
 
 all:	$(NAME)

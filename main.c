@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/21 20:48:43 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 23:43:30 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,5 +144,11 @@ int main()
 	size_t j = strlcat(s18, s1, 4);
 	printf("%lu%s\n", i, s17);
 	printf("%lu%s\n", j, s18);
+
+    printf("\n\n- Test numero 14 - ft_strjoin :\n");
+    printf("%s\n", ft_strjoin(s1, s3));
+    printf("%s\n", "salutbien");
+    printf("%s\n", ft_strjoin("tu connais les bails ", "mamen"));
+    printf("%s\n", "tu connais les bails mamen");
 
 }
