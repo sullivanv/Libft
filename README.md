@@ -1,5 +1,5 @@
 # Libft
-Librairie 42 - langage : C ------- TODO : • ------ 5 / 57
+Librairie 42 - langage : C ------- TODO : • ------ 13 / 57
 
 # - LibC :
 
@@ -11,18 +11,18 @@ Librairie 42 - langage : C ------- TODO : • ------ 5 / 57
 • memchr,
 • memcmp,
 strlen,
-• strdup,
-• strcpy,
-• strncpy,
-• strcat,
-• strncat,
-• strlcat,
+strdup,
+strcpy,
+strncpy,
+strcat,
+strncat,
+strlcat,
 • strchr,
 • strrchr,
 • strstr,
 • strnstr,
-• strcmp,
-• strncmp,
+strcmp,
+strncmp,
 atoi,
 • isalpha,
 • isdigit,
