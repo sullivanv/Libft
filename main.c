@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/20 20:08:36 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 20:15:13 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,4 +86,10 @@ int main()
 	printf("%i\n", ft_strncmp(s3, s4, 4));
 	printf("%i\n", strncmp(s5, s6, 2));
 	printf("%i\n", ft_strncmp(s5, s6, 2));
+
+    printf("\n\n- Test numero 8 - ft_strdup :\n");
+	char *s7 = ft_strdup(s1);
+	char *s8 = strdup(s1);
+	printf("%s\n", s7);
+	printf("%s\n", s8);
 }

@@ -6,16 +6,16 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 01:46:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/09 01:47:23 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 20:13:03 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
-	inti;
-	char*dest;
+	int		i;
+	char	*dest;
 
 	i = 0;
 	while (src[i])
@@ -27,6 +27,6 @@ char	*ft_strdup(char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = src[i];
+	dest[i] = '\0';
 	return (dest);
 }
