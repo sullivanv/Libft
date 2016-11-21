@@ -6,11 +6,13 @@
 /*   By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/09 07:39:06 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/08/10 05:14:50 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 20:34:18 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	unsigned int i;
 	unsigned int j;

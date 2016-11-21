@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/21 20:28:25 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 20:48:43 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,4 +108,41 @@ int main()
 	s12 = strncpy(s10, s1, 1);
 	printf("%s\n", s11);
 	printf("%s\n", s12);
+
+    printf("\n\n- Test numero 11 - ft_strcat :\n");
+	char *s13 = (char*)malloc(sizeof(char) * 12);
+	char *s14 = (char*)malloc(sizeof(char) * 12);
+	s13[0] = 'y';
+	s14[0] = 'y';
+	s13[1] = 'o';
+	s14[1] = 'o';
+	s13 = ft_strcat(s13, s1);
+	s14 = strcat(s14, s1);
+	printf("%s\n", s13);
+	printf("%s\n", s14);
+
+    printf("\n\n- Test numero 12 - ft_strncat :\n");
+	char *s15 = (char*)malloc(sizeof(char) * 12);
+	char *s16 = (char*)malloc(sizeof(char) * 12);
+	s15[0] = 'y';
+	s16[0] = 'y';
+	s15[1] = 'o';
+	s16[1] = 'o';
+	s15 = ft_strncat(s15, s1, 2);
+	s16 = strncat(s16, s1, 2);
+	printf("%s\n", s15);
+	printf("%s\n", s16);
+
+    printf("\n\n- Test numero 13 - ft_strlcat :\n");
+	char *s17 = (char*)malloc(sizeof(char) * 12);
+	char *s18 = (char*)malloc(sizeof(char) * 12);
+	s17[0] = 'y';
+	s18[0] = 'y';
+	s17[1] = 'o';
+	s18[1] = 'o';
+	size_t i = ft_strlcat(s17, s1, 4);
+	size_t j = strlcat(s18, s1, 4);
+	printf("%lu%s\n", i, s17);
+	printf("%lu%s\n", j, s18);
+
 }
