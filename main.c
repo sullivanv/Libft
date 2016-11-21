@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/21 20:15:13 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 20:22:43 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,4 +92,14 @@ int main()
 	char *s8 = strdup(s1);
 	printf("%s\n", s7);
 	printf("%s\n", s8);
+
+    printf("\n\n- Test numero 9 - ft_strcpy :\n");
+	char *s9 = (char*)malloc(sizeof(char) * 6);
+	char *s10 = (char*)malloc(sizeof(char) * 6);
+	s9 = ft_strcpy(s9, s1);
+	s10 = strcpy(s10, s1);
+	printf("%s\n", s9);
+	printf("%s\n", s10);
+
+
 }

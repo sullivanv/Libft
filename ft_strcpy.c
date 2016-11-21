@@ -6,11 +6,13 @@
 /*   By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 05:28:24 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/08/08 07:10:57 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/21 20:17:44 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+#include "libft.h"
+
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int i;
 
