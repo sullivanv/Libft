@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/21 23:43:30 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/22 00:04:57 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -151,4 +151,16 @@ int main()
     printf("%s\n", ft_strjoin("tu connais les bails ", "mamen"));
     printf("%s\n", "tu connais les bails mamen");
 
+
+    printf("\n\n- Test numero 15 - ft_strstr :\n");
+    printf("%s\n", strstr("", "a"));
+    printf("%s\n", ft_strstr("", "a"));
+    printf("%s\n", strstr("", ""));
+    printf("%s\n", ft_strstr("", ""));
+    printf("%s\n", strstr("salute", "te"));
+    printf("%s\n", ft_strstr("salute", "te"));
+    printf("%s\n", strstr(" ", " "));
+    printf("%s\n", ft_strstr(" ", " "));
+    printf("%s\n", strstr("salute", "lu"));
+    printf("%s\n", ft_strstr("salute", "lu"));
 }

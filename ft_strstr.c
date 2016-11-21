@@ -6,26 +6,15 @@
 /*   By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 07:26:51 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/08/11 02:01:04 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/22 00:03:56 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-int		ft_strlen(char *str)
+static int		checkstr(const char *str, const char *to_find, unsigned int *i, unsigned int *j)
 {
-	int	i;
-
-	i = 0;
-	while (*(str + i))
-		i++;
-	return (i);
-}
-
-int		checkstr(char *str, char *to_find, int *i, int *j)
-{
-	int last;
+	unsigned int last;
 
 	if (str[*i] == to_find[*j])
 	{
@@ -48,10 +37,10 @@ int		checkstr(char *str, char *to_find, int *i, int *j)
 	return (0);
 }
 
-char	*ft_strstr(char *str, char *to_find)
+char			*ft_strstr(const char *str, const char *to_find)
 {
-	int i;
-	int j;
+	unsigned int i;
+	unsigned int j;
 
 	i = 0;
 	j = 0;
@@ -60,22 +49,11 @@ char	*ft_strstr(char *str, char *to_find)
 	if (ft_strlen(str) == 0 && ft_strlen(to_find) == 0)
 		return ("");
 	if (ft_strlen(str) > 0 && ft_strlen(to_find) == 0)
-		return (str);
+		return ((char*)str);
 	while (i < ft_strlen(str))
 	{
 		if (checkstr(str, to_find, &i, &j) == 1)
-			return (&str[i - j]);
+			return ((char*)&str[i - j]);
 	}
-	return (0);
-}
-
-
-int main(int argc, char **argv)
-{
-	int i;
-	i = argc;
-	i++;
-	printf("%s", strstr(argv[1], argv[2]));
-	printf("\n%s", ft_strstr(argv[1], argv[2]));
 	return (0);
 }
