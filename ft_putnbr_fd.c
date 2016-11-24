@@ -6,31 +6,31 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:28:42 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/24 20:25:58 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/24 20:27:04 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	my_put_unsigned(unsigned int nb)
+static void	my_put_unsigned(unsigned int nb, int fd)
 {
 	if (nb >= 10)
 	{
-		my_put_unsigned(nb / 10);
-		my_put_unsigned(nb % 10);
+		my_put_unsigned(nb / 10, fd);
+		my_put_unsigned(nb % 10, fd);
 	}
 	else
 	{
-		ft_putchar(nb + '0');
+		ft_putchar_fd(nb + '0', fd);
 	}
 }
 
-void	ft_putnbr(int nb)
+void	ft_putnbr_fd(int nb, int fd)
 {
 	if (nb < 0)
 	{
-		ft_putchar('-');
+		ft_putchar_fd('-', fd);
 		nb = -nb;
 	}
-	my_put_unsigned(nb);
+	my_put_unsigned(nb, fd);
 }
