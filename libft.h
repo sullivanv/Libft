@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:41:18 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/24 19:43:12 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/24 19:55:41 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ char*	ft_strjoin(char const *s1, char const *s2);
 char	*ft_strstr(const char *big, const char *little);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
 
 #endif
