@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/24 19:39:56 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/24 19:42:53 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -168,4 +168,9 @@ int main()
 	ft_putchar_fd('a', 1);
 	ft_putchar_fd('\n', 1);
 	printf("a\n");
+
+
+    printf("\n\n- Test numero 17 - ft_putstr_fd :\n");
+	ft_putstr_fd("mamene du bon pillon\n", 1);
+	printf("mamene du bon pillon\n");
 }
