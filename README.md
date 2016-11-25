@@ -1,5 +1,5 @@
 # Libft
-Librairie 42 - langage : C ------- TODO : • ------ 15 / 57
+Librairie 42 - langage : C ------- TODO : • ------ 20 / 57
 
 # - LibC :
 
@@ -52,12 +52,12 @@ ft_strjoin,
 • ft_itoa,
 ft_putchar,
 ft_putstr,
-• ft_putendl,
+ft_putendl,
 ft_putnbr,
-• ft_putchar_fd,
-• ft_putstr_fd,
-• ft_putendl_fd,
-• ft_putnbr_fd,
+ft_putchar_fd,
+ft_putstr_fd,
+ft_putendl_fd,
+ft_putnbr_fd,
 
 # - Fonctions Bonus :
 
