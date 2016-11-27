@@ -1,5 +1,5 @@
 # Libft
-Librairie 42 - langage : C ------- TODO : • ------ 20 / 57
+Librairie 42 - langage : C ------- TODO : • ------ 27 / 57
 
 # - LibC :
 
@@ -24,13 +24,13 @@ strstr,
 strcmp,
 strncmp,
 atoi,
-• isalpha,
-• isdigit,
-• isalnum,
-• isascii,
-• isprint,
-• toupper,
-• tolower
+isalpha,
+isdigit,
+isalnum,
+isascii,
+isprint,
+toupper,
+tolower
 
 # - Fonctions supplémentaires :
 
