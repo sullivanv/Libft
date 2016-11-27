@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/24 20:34:50 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/27 21:20:03 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
+#include <ctype.h>
 
 int main()
 {
@@ -200,4 +201,88 @@ int main()
     printf("\n\n- Test numero 20 - ft_putendl :\n");
 	ft_putendl("mamene du bon pillon");
 	printf("mamene du bon pillon\n");
+
+    printf("\n\n- Test numero 21 - ft_isalpha :\n");
+	printf("%i\n", isalpha(97));
+	printf("%i\n", ft_isalpha(97));
+	printf("%i\n", isalpha(32));
+	printf("%i\n", ft_isalpha(32));
+	printf("%i\n", isalpha(96));
+	printf("%i\n", ft_isalpha(96));
+	printf("%i\n", isalpha(122));
+	printf("%i\n", ft_isalpha(122));
+	printf("%i\n", isalpha(156));
+	printf("%i\n", ft_isalpha(156));
+
+
+    printf("\n\n- Test numero 22 - ft_isfigit :\n");
+	printf("%i\n", isdigit(97));
+	printf("%i\n", ft_isdigit(97));
+	printf("%i\n", isdigit(1));
+	printf("%i\n", ft_isdigit(1));
+	printf("%i\n", isdigit(48));
+	printf("%i\n", ft_isdigit(48));
+	printf("%i\n", isdigit(123));
+	printf("%i\n", ft_isdigit(123));
+	printf("%i\n", isdigit(57));
+	printf("%i\n", ft_isdigit(57));
+
+    printf("\n\n- Test numero 23 - ft_isalnum :\n");
+	printf("%i\n", isalnum(97));
+	printf("%i\n", ft_isalnum(97));
+	printf("%i\n", isalnum(32));
+	printf("%i\n", ft_isalnum(32));
+	printf("%i\n", isalnum(48));
+	printf("%i\n", ft_isalnum(48));
+	printf("%i\n", isalnum(123));
+	printf("%i\n", ft_isalnum(123));
+	printf("%i\n", isalnum(122));
+	printf("%i\n", ft_isalnum(122));
+	printf("%i\n", isalnum(57));
+	printf("%i\n", ft_isalnum(57));
+
+    printf("\n\n- Test numero 24 - ft_isascii :\n");
+	printf("%i\n", isascii(235));
+	printf("%i\n", ft_isascii(235));
+	printf("%i\n", isascii(176));
+	printf("%i\n", ft_isascii(176));
+	printf("%i\n", isascii(97));
+	printf("%i\n", ft_isascii(97));
+	printf("%i\n", isascii(0));
+	printf("%i\n", ft_isascii(0));
+
+
+    printf("\n\n- Test numero 25 - ft_isprint :\n");
+	printf("%i\n", isprint(31));
+	printf("%i\n", ft_isprint(31));
+	printf("%i\n", isprint(32));
+	printf("%i\n", ft_isprint(32));
+	printf("%i\n", isprint(126));
+	printf("%i\n", ft_isprint(126));
+	printf("%i\n", isprint(127));
+	printf("%i\n", ft_isprint(127));
+
+    printf("\n\n- Test numero 26 - ft_toupper :\n");
+	printf("%i\n", toupper(31));
+	printf("%i\n", ft_toupper(31));
+	printf("%i\n", toupper(97));
+	printf("%i\n", ft_toupper(97));
+	printf("%i\n", toupper(48));
+	printf("%i\n", ft_toupper(48));
+	printf("%i\n", toupper(65));
+	printf("%i\n", ft_toupper(65));
+	printf("%i\n", toupper(122));
+	printf("%i\n", ft_toupper(122));
+
+    printf("\n\n- Test numero 27 - ft_tolower :\n");
+	printf("%i\n", tolower(31));
+	printf("%i\n", ft_tolower(31));
+	printf("%i\n", tolower(65));
+	printf("%i\n", ft_tolower(65));
+	printf("%i\n", tolower(97));
+	printf("%i\n", ft_tolower(97));
+	printf("%i\n", tolower(90));
+	printf("%i\n", ft_tolower(90));
+	printf("%i\n", tolower(91));
+	printf("%i\n", ft_tolower(91));
 }

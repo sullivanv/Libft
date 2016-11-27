@@ -6,7 +6,7 @@
 #    By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/16 08:16:35 by suvitiel          #+#    #+#              #
-#    Updated: 2016/11/24 20:34:03 by suvitiel         ###   ########.fr        #
+#    Updated: 2016/11/27 21:19:04 by suvitiel         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -21,7 +21,11 @@ SRC		=	ft_putchar.c ft_strlen.c \
 			ft_strlcat.c ft_strjoin.c \
 			ft_putstr_fd.c ft_putchar_fd.c \
 			ft_putendl_fd.c ft_putnbr_fd.c \
-			ft_putendl.c
+			ft_putendl.c ft_strstr.c \
+			ft_isalpha.c ft_isdigit.c \
+			ft_isalnum.c ft_isascii.c \
+			ft_isprint.c ft_toupper.c \
+			ft_tolower.c
 RM		= rm -f
 OBJS	= ft_putchar.o ft_strlen.o \
 			ft_putstr.o	ft_atoi.o \
@@ -32,7 +36,11 @@ OBJS	= ft_putchar.o ft_strlen.o \
 			ft_strlcat.o ft_strjoin.o \
 			ft_putstr_fd.o ft_putchar_fd.o \
 			ft_putendl_fd.o ft_putnbr_fd.o \
-			ft_putendl.o
+			ft_putendl.o ft_strstr.o \
+			ft_isalpha.o ft_isdigit.o \
+			ft_isalnum.o ft_isascii.o \
+			ft_isprint.o ft_toupper.o \
+			ft_tolower.o
 CFLAGS	= -Wall -Wextra -Werror
 
 all:	$(NAME)
