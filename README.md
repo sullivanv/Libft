@@ -1,5 +1,5 @@
 # Libft
-Librairie 42 - langage : C ------- TODO : • ------ 27 / 57
+Librairie 42 - langage : C ------- TODO : • ------ 42 / 57
 
 # - LibC :
 
@@ -34,22 +34,22 @@ tolower
 
 # - Fonctions supplémentaires :
 
-• ft_memalloc,
-• ft_memdel,
-• ft_strnew,
-• ft_strdel,
-• ft_strclr,
-• ft_striter,
-• ft_striteri,
-• ft_strmap,
-• ft_strmapi,
-• ft_strequ,
-• ft_strnequ,
-• ft_strsub,
+• ft_memalloc(a tester),
+• ft_memdel(a tester),
+• ft_strnew(a tester),
+• ft_strdel(a tester),
+• ft_strclr(a tester),
+• ft_striter(a tester),
+• ft_striteri(a tester),
+• ft_strmap (a tester),
+• ft_strmapi(a tester),
+• ft_strequ(a tester),
+• ft_strnequ(a tester),
+• ft_strsub(a tester),
 ft_strjoin,
-• ft_strtrim,
-• ft_strsplit,
-• ft_itoa,
+• ft_strtrim(a tester),
+• ft_strsplit (a tester),
+ft_itoa,
 ft_putchar,
 ft_putstr,
 ft_putendl,
