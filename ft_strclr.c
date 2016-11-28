@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/08 22:24:57 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/27 21:24:55 by suvitiel         ###   ########.fr       */
+/*   Created: 2016/11/27 21:56:04 by suvitiel          #+#    #+#             */
+/*   Updated: 2016/11/27 21:56:44 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_strclr(char *s)
 {
-	unsigned int	count;
-	char			*str;
+	int i;
 
-	count = 0;
-	str = s;
-	while (count < n)
+	i = 0;
+	while (s[i])
 	{
-		str[count] = (char)c;
-		count++;
+		s[i] = '\0';
+		i++;
 	}
-	return (s);
 }
