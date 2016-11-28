@@ -6,9 +6,11 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/27 21:50:54 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/27 21:53:11 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/29 00:06:21 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {

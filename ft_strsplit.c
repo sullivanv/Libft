@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 23:25:20 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/28 23:34:56 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/29 00:19:14 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ static char	**ft_init_tab(int nbWord, char const *s, char c)
 	return (tab);
 }
 
-static int	ft_full_tab(char** tab, char const *s,char c)
+static char	**ft_full_tab(char** tab, char const *s,char c)
 {
 	int i;
 	int indexWord;
@@ -97,7 +97,7 @@ static int	ft_full_tab(char** tab, char const *s,char c)
 		indexWord++;
 	}
 	tab[indexWord] = 0;
-	return (nbWord);
+	return (tab);
 }
 
 char	**ft_strsplit(char const *s, char c)

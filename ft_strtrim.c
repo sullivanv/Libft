@@ -6,9 +6,11 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 23:04:56 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/28 23:15:07 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/29 00:15:51 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int ft_strlen_without_white(char const *s)
 {

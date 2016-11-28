@@ -6,7 +6,7 @@
 #    By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/16 08:16:35 by suvitiel          #+#    #+#              #
-#    Updated: 2016/11/27 21:19:04 by suvitiel         ###   ########.fr        #
+#    Updated: 2016/11/29 00:16:35 by suvitiel         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -25,7 +25,14 @@ SRC		=	ft_putchar.c ft_strlen.c \
 			ft_isalpha.c ft_isdigit.c \
 			ft_isalnum.c ft_isascii.c \
 			ft_isprint.c ft_toupper.c \
-			ft_tolower.c
+			ft_tolower.c ft_memalloc.c \
+			ft_memdel.c ft_strnew.c \
+			ft_strdel.c ft_strclr.c \
+			ft_striter.c ft_striteri.c \
+			ft_strmap.c ft_strmapi.c \
+			ft_strequ.c ft_strnequ.c \
+			ft_strsub.c ft_strtrim.c \
+			ft_strsplit.c
 RM		= rm -f
 OBJS	= ft_putchar.o ft_strlen.o \
 			ft_putstr.o	ft_atoi.o \
@@ -40,7 +47,14 @@ OBJS	= ft_putchar.o ft_strlen.o \
 			ft_isalpha.o ft_isdigit.o \
 			ft_isalnum.o ft_isascii.o \
 			ft_isprint.o ft_toupper.o \
-			ft_tolower.o
+			ft_tolower.o ft_memalloc.o \
+			ft_memdel.o ft_strnew.o \
+			ft_strdel.o ft_strclr.o \
+			ft_striter.o ft_striteri.o \
+			ft_strmap.o ft_strmapi.o \
+			ft_strequ.o ft_strnequ.o \
+			ft_strsub.o ft_strtrim.o \
+			ft_strsplit.o
 CFLAGS	= -Wall -Wextra -Werror
 
 all:	$(NAME)

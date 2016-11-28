@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/27 21:27:13 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/27 21:45:45 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/29 00:17:33 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ void	*ft_memalloc(size_t size)
 	if (data == NULL)
 		return (NULL);
 	data = 0;
-	return (data)
+	return (data);
 }
