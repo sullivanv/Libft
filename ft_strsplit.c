@@ -6,16 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 23:25:20 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/11 00:06:46 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/28 23:34:56 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// enlever
-#include <stdio.h>
-
 #include "libft.h"
 
-int		ft_count_word(char const *s, char c)
+static int	ft_count_word(char const *s, char c)
 {
 	int i;
 	int nbWord;
@@ -44,7 +41,7 @@ int		ft_count_word(char const *s, char c)
 	return (nbWord);
 }
 
-char	**ft_init_tab(int nbWord, char const *s, char c)
+static char	**ft_init_tab(int nbWord, char const *s, char c)
 {
 	char **tab;
 	int i;
@@ -55,6 +52,8 @@ char	**ft_init_tab(int nbWord, char const *s, char c)
 	j = 0;
 	index = 0;
 	tab = (char**)malloc(sizeof(char) * nbWord + 1);
+	if (tab == NULL)
+		return (NULL);
 	while (s[i])
 	{
 		while (s[i] && s[i] != c)
@@ -65,17 +64,21 @@ char	**ft_init_tab(int nbWord, char const *s, char c)
 			i++;
 		}
 		tab[index] = (char*)malloc(sizeof(char) * (i - j) + 1);
+		if (tab[index] == NULL)
+			return (NULL);
 		index++;
 	}
 	return (tab);
 }
 
-int		ft_full_tab(char** tab, char const *s,char c)
+static int	ft_full_tab(char** tab, char const *s,char c)
 {
 	int i;
 	int indexWord;
+	int j;
 
 	i = 0;
+	j = 0;
 	indexWord = 0;
 	while (s[i])
 	{
@@ -85,8 +88,12 @@ int		ft_full_tab(char** tab, char const *s,char c)
 		}
 		while (s[i] && s[i] != c)
 		{
-// remplir tab
+			tab[indexWord][j] = s[i];
+			j++;
+			i++;
 		}
+		tab[indexWord][j] = '\0';
+		j = 0;
 		indexWord++;
 	}
 	tab[indexWord] = 0;
@@ -101,12 +108,5 @@ char	**ft_strsplit(char const *s, char c)
 	nbWord = ft_count_word(s, c);
 	tab = ft_init_tab(nbWord, s, c);
 	tab = ft_full_tab(tab, s, c);
-	printf("%d\n", nbWord);
 	return (tab);
-}
-
-int main(int argc, char **argv)
-{
-	ft_strsplit(argv[1], argv[2][0]);
-	return (0);
 }
