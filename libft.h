@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:41:18 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/29 00:16:21 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/11/29 00:23:05 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,6 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
+void	*ft_memset(void *b, int c, size_t len);
 
 #endif
