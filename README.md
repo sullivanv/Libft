@@ -1,15 +1,15 @@
 # Libft
-Librairie 42 - langage : C ------- TODO : • ------ 42 / 57
+Librairie 42 - langage : C ------- TODO : • ------ 51 / 57
 
 # - LibC :
 
 memset (a tester),
 bzero (a tester),
-• memcpy,
-• memccpy,
-• memmove,
-• memchr,
-• memcmp,
+memcpy (a tester),
+memccpy (a tester),
+memmove (a tester),
+memchr (a tester),
+memcmp (a tester),
 strlen,
 strdup,
 strcpy,
@@ -17,8 +17,8 @@ strncpy,
 strcat,
 strncat,
 strlcat,
-• strchr,
-• strrchr,
+strchr(a test),
+strrchr(a test),
 strstr,
 • strnstr,
 strcmp,
