@@ -4,7 +4,7 @@ Librairie 42 - langage : C ------- TODO : • ------ 42 / 57
 # - LibC :
 
 memset (a tester),
-• bzero,
+bzero (a tester),
 • memcpy,
 • memccpy,
 • memmove,
