@@ -6,17 +6,17 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 01:38:18 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/29 01:44:29 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/07 22:56:54 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t i;
-	char *s1;
-	char *s2;
+	size_t	i;
+	char	*s1;
+	char	*s2;
 
 	i = 0;
 	s1 = (char*)dest;

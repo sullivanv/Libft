@@ -6,13 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:28:42 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/24 20:25:58 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/07 23:04:05 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	my_put_unsigned(unsigned int nb)
+static void		my_put_unsigned(unsigned int nb)
 {
 	if (nb >= 10)
 	{
@@ -25,7 +25,7 @@ static void	my_put_unsigned(unsigned int nb)
 	}
 }
 
-void	ft_putnbr(int nb)
+void			ft_putnbr(int nb)
 {
 	if (nb < 0)
 	{

@@ -6,13 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 23:04:56 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/29 00:15:51 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/07 23:25:27 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int ft_strlen_without_white(char const *s)
+static int	ft_strlen_without_white(char const *s)
 {
 	int i;
 	int count;
@@ -29,7 +29,7 @@ static int ft_strlen_without_white(char const *s)
 	return (count);
 }
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
 	int		len;
 	char	*str;
@@ -43,7 +43,7 @@ char	*ft_strtrim(char const *s)
 	if (str == NULL)
 		return (NULL);
 	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
-        i++;
+		i++;
 	while (s[i] && s[i] != ' ' && s[i] != '\t' && s[i] != '\n')
 	{
 		str[j] = s[i];

@@ -6,15 +6,16 @@
 /*   By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 07:26:51 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/22 00:03:56 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/07 23:23:49 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		checkstr(const char *str, const char *to_find, unsigned int *i, unsigned int *j)
+static int		checkstr(const char *str, const char *to_find,
+						unsigned int *i, unsigned int *j)
 {
-	unsigned int last;
+	unsigned int	last;
 
 	if (str[*i] == to_find[*j])
 	{

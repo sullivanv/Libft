@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:30:43 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/20 17:53:21 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/07 23:12:46 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-  int i;
+	int	i;
 
-  i = 0;
-  while (s[i])
-    i++;
-  return (i);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
