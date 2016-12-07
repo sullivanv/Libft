@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/27 21:50:54 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/07 23:16:12 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/07 23:33:58 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char	*ft_strnew(size_t size)
 	while (i < size)
 	{
 		str[i] = '\0';
+		i++;
 	}
 	return (str);
 }

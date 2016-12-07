@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:41:18 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/07 23:31:40 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/07 23:54:35 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 size_t	ft_strlen(const char *s);
 int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
 void	ft_putnbr(int n);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
