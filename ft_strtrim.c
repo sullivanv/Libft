@@ -6,11 +6,26 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 23:04:56 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/07 23:25:27 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/15 00:35:08 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_letter_exist(char const *s)
+{
+	int i;
+
+	i = 0;
+	if (s[i] != ' ' && s[i] != '\t' && s[i] != '\n')
+		return (1);
+	while ((s[i] == ' ' || s[i] == '\t' || s[i] == '\n') && s[i])
+		i++;
+	if (s[i] == '\0')
+		return (0);
+	else
+		return (1);
+}
 
 static int	ft_strlen_without_white(char const *s)
 {
@@ -21,7 +36,7 @@ static int	ft_strlen_without_white(char const *s)
 	count = 0;
 	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
 		i++;
-	while (s[i] && s[i] != ' ' && s[i] != '\t' && s[i] != '\n')
+	while (ft_letter_exist(&s[i]) == 1)
 	{
 		count++;
 		i++;
@@ -44,11 +59,12 @@ char		*ft_strtrim(char const *s)
 		return (NULL);
 	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
 		i++;
-	while (s[i] && s[i] != ' ' && s[i] != '\t' && s[i] != '\n')
+	while (len)
 	{
 		str[j] = s[i];
 		i++;
 		j++;
+		len--;
 	}
 	str[j] = '\0';
 	return (str);

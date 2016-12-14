@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:29:24 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/20 19:52:34 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/15 00:00:41 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ int	ft_strcmp(const char *s1, const char *s2)
 	i = 0;
 	while (s1[i] == s2[i] && s1[i] && s2[i])
 		i++;
-	return (s1[i] - s2[i]);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
