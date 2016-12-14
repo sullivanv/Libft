@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 02:04:56 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/15 00:54:19 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/15 00:56:31 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	str = (unsigned char*)s;
 	while (i < n && (unsigned char)c != str[i])
 		i++;
+	if (i == n)
+		return (NULL);
 	if ((unsigned char)c == str[i])
 		return (&str[i]);
 	else
