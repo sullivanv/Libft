@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 01:53:36 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/07 23:03:19 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/15 01:03:22 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char *d;
-	char *s;
+	unsigned char *d;
+	unsigned char *s;
 
-	d = (char*)dest;
-	s = (char*)src;
+	d = (unsigned char*)dest;
+	s = (unsigned char*)src;
 	if (dest > src)
 	{
 		while (n > 0)
