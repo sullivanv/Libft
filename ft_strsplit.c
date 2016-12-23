@@ -5,106 +5,77 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/10 23:25:20 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/07 23:30:09 by suvitiel         ###   ########.fr       */
+/*   Created: 2016/12/23 00:55:45 by suvitiel          #+#    #+#             */
+/*   Updated: 2016/12/23 00:55:51 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_count_word(char const *s, char c)
+char	*ft_init_line(char *line, int *i, int j, char const *str)
 {
-	int i;
-	int nbword;
-	int isfirst;
+	int x;
 
-	i = 0;
-	nbword = 0;
-	isfirst = 0;
-	while (s[i])
+	x = 0;
+	while (j < *i)
 	{
-		while (s[i] && s[i] == c)
-		{
-			i++;
-		}
-		while (s[i] && s[i] != c)
-		{
-			if (isfirst == 0)
-			{
-				isfirst = 1;
-				nbword++;
-			}
-			i++;
-		}
-		isfirst = 0;
+		line[x] = str[j];
+		j++;
+		x++;
 	}
-	return (nbword);
+	line[x] = '\0';
+	return (line);
 }
 
-static char		**ft_init_tab(int nbword, char const *s, char c)
+char	**ft_init_tab(char const *str, int count, int *i, char c)
 {
-	char	**tab;
-	int		i;
+	int		x;
 	int		j;
-	int		index;
+	char	**tab;
 
-	i = 0;
-	j = 0;
-	index = 0;
-	tab = (char**)malloc(sizeof(char) * nbword + 1);
+	x = 0;
+	*i = 0;
+	tab = (char**)malloc((sizeof(tab) * count) + 1);
 	if (tab == NULL)
 		return (NULL);
-	while (s[i])
+	while (x < count)
 	{
-		while (s[i] && s[i] != c)
-			i++;
-		j = i;
-		while (s[i] && s[i] == c)
-			i++;
-		tab[index] = (char*)malloc(sizeof(char) * (i - j) + 1);
-		if (tab[index] == NULL)
+		while (str[*i] == c && str[*i])
+			*i = *i + 1;
+		j = *i;
+		while (str[*i] != c && str[*i])
+			*i = *i + 1;
+		tab[x] = (char*)malloc(sizeof(tab[x]) * (*i - j) + 2);
+		if (tab[x] == NULL)
 			return (NULL);
-		index++;
+		tab[x] = ft_init_line(tab[x], i, j, str);
+		x++;
 	}
+	tab[x] = 0;
 	return (tab);
 }
 
-static char		**ft_full_tab(char **tab, char const *s, char c)
+char	**ft_strsplit(char const *str, char c)
 {
 	int i;
-	int indexword;
-	int j;
+	int count;
+	int first;
 
 	i = 0;
-	j = 0;
-	indexword = 0;
-	while (s[i])
+	count = 0;
+	first = 0;
+	while (str[i])
 	{
-		while (s[i] && s[i] == c)
+		while ((str[i] == c) && str[i])
+			i++;
+		while (str[i] != c && str[i])
 		{
+			if (first == 0)
+				count++;
+			first = 1;
 			i++;
 		}
-		while (s[i] && s[i] != c)
-		{
-			tab[indexword][j] = s[i];
-			j++;
-			i++;
-		}
-		tab[indexword][j] = '\0';
-		j = 0;
-		indexword++;
+		first = 0;
 	}
-	tab[indexword] = 0;
-	return (tab);
-}
-
-char			**ft_strsplit(char const *s, char c)
-{
-	int		nbword;
-	char	**tab;
-
-	nbword = ft_count_word(s, c);
-	tab = ft_init_tab(nbword, s, c);
-	tab = ft_full_tab(tab, s, c);
-	return (tab);
+	return (ft_init_tab(str, count, &i, c));
 }
