@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 02:20:27 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/15 00:51:13 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/23 01:04:26 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,12 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	res = -1;
 	str = (char*)s;
+	if (str[i] == c)
+		res = i;
 	while (str[i])
 	{
-		if (str[i] == c)
-			res = i;
+		if (str[i + 1] == c)
+			res = i + 1;
 		i++;
 	}
 	if (res == -1)
