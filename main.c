@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/23 22:18:05 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/09 03:48:37 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -295,4 +295,5 @@ int main()
 	printf("%s\n", ft_strnstr("test", "test", 0));
 	printf("%s\n", strnstr("test", "test", 2));
 	printf("%s\n", ft_strnstr("test", "test", 2));
+
 }

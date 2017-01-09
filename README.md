@@ -6,7 +6,7 @@ Librairie 42 - langage : C ------- TODO : • ------ 52 / 52 --- (0 / 5)
 memset,
 bzero,
 memcpy,
-memccpy (a tester),
+memccpy,
 memmove (a tester),
 memchr,
 memcmp,
