@@ -6,13 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/23 00:55:45 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/23 00:55:51 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/09 20:00:37 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_init_line(char *line, int *i, int j, char const *str)
+static char	*ft_init_line(char *line, int *i, int j, char const *str)
 {
 	int x;
 
@@ -27,7 +27,7 @@ char	*ft_init_line(char *line, int *i, int j, char const *str)
 	return (line);
 }
 
-char	**ft_init_tab(char const *str, int count, int *i, char c)
+static char	**ft_init_tab(char const *str, int count, int *i, char c)
 {
 	int		x;
 	int		j;
@@ -55,7 +55,7 @@ char	**ft_init_tab(char const *str, int count, int *i, char c)
 	return (tab);
 }
 
-char	**ft_strsplit(char const *str, char c)
+char		**ft_strsplit(char const *str, char c)
 {
 	int i;
 	int count;
