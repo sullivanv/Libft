@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 01:53:36 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/15 01:03:22 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/09 18:41:29 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		while (n > 0)
 		{
-			d[n] = s[n];
 			n--;
+			d[n] = s[n];
 		}
 	}
 	else
