@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 17:49:16 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/27 21:20:03 by suvitiel         ###   ########.fr       */
+/*   Updated: 2016/12/23 22:18:05 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -285,4 +285,14 @@ int main()
 	printf("%i\n", ft_tolower(90));
 	printf("%i\n", tolower(91));
 	printf("%i\n", ft_tolower(91));
+
+
+
+    printf("\n\n- Test numero 28 - ft_strnstr :\n");
+	printf("%s\n", strnstr("test", "test", 6));
+	printf("%s\n", ft_strnstr("test", "test", 6));
+	printf("%s\n", strnstr("test", "test", 0));
+	printf("%s\n", ft_strnstr("test", "test", 0));
+	printf("%s\n", strnstr("test", "test", 2));
+	printf("%s\n", ft_strnstr("test", "test", 2));
 }
