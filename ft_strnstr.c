@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 02:26:36 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/09 03:35:48 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/09 20:55:27 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,7 @@ char			*ft_strnstr(const char *str, const char *to_find, size_t len)
 	while (i < ft_strlen(str) && s < len)
 	{
 		if (ft_checkstr(str, to_find, &i, &j) == 1)
-		{
-			if (i > len)
-				return (NULL);
-			return ((char*)&str[i - j]);
-		}
+			return (i > len) ? (NULL) : ((char*)&str[i - j]);
 		s++;
 	}
 	return (NULL);

@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 23:04:56 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/09 20:07:19 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/09 21:10:27 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_letter_exist(char const *s)
 	i = 0;
 	if (s[i] != ' ' && s[i] != '\t' && s[i] != '\n')
 		return (1);
-	while ((s[i] == ' ' || s[i] == '\t' || s[i] == '\n') && s[i])
+	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
 		i++;
 	if (s[i] == '\0')
 		return (0);
@@ -59,7 +59,7 @@ char		*ft_strtrim(char const *s)
 		return (NULL);
 	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
 		i++;
-	while (len)
+	while (s[i] && len)
 	{
 		str[j] = s[i];
 		i++;

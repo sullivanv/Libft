@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:27:36 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/15 00:06:52 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/09 21:20:15 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		ft_atoi(const char *str)
 {
-	int i;
-	int nbr;
-	int isneg;
+	unsigned int i;
+	unsigned int nbr;
+	unsigned int isneg;
 
 	isneg = 0;
 	i = 0;
@@ -36,6 +36,6 @@ int		ft_atoi(const char *str)
 		i++;
 	}
 	if (isneg == 1)
-		return (-nbr);
+		return (nbr * (-1));
 	return (nbr);
 }

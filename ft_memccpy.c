@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 01:47:45 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/09 04:03:54 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/09 20:51:20 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
 	size_t			i;
-	char	*s1;
+	char			*s1;
 
 	s1 = dest;
 	i = 0;
