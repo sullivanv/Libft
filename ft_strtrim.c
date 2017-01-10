@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 23:04:56 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/10 03:13:22 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 05:41:04 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,18 +56,8 @@ char		*ft_strtrim(char const *s)
 	if (!s)
 		return (NULL);
 	len = ft_strlen_without_white(s);
-	str = (char*)malloc(sizeof(char) * len + 1);
-	if (str == NULL)
-		return (NULL);
 	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
 		i++;
-	while (s[i] && len)
-	{
-		str[j] = s[i];
-		i++;
-		j++;
-		len--;
-	}
-	str[j] = '\0';
+	str = ft_strsub(s, i, len);
 	return (str);
 }
