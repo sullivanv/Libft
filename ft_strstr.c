@@ -6,7 +6,7 @@
 /*   By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/08 07:26:51 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/10 05:28:25 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 07:46:43 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ char			*ft_strstr(const char *str, const char *to_find)
 
 	i = 0;
 	j = 0;
+	if (!to_find[0])
+		return ((char *)str);
 	if (ft_strlen(str) < ft_strlen(to_find))
 		return (0);
 	if (ft_strlen(str) == 0 && ft_strlen(to_find) == 0)
@@ -58,3 +60,29 @@ char			*ft_strstr(const char *str, const char *to_find)
 	}
 	return (0);
 }
+
+/*
+char *ft_strstr(const char *s1, const char *s2)
+{
+	int a;
+	int b;
+	int len;
+
+	a = 0;
+	len = ft_strlen(s2);
+	if (!s2[0])
+		return ((char *)s1);
+	while (s1[a] != '\0')
+	{
+		b = 0;
+		while (s2[b] == s1[b + a])
+		{
+			if (b == len - 1)
+				return ((char *)&s1[a]);
+			b++;
+		}
+		a++;
+	}
+	return (NULL);
+}
+*/
