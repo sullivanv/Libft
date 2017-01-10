@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/27 21:56:04 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/10 02:54:53 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 18:41:44 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_strclr(char *s)
 
 	i = 0;
 	if (!s)
-		return;
+		return ;
 	while (s[i])
 	{
 		s[i] = '\0';

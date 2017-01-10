@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 23:35:33 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/10 02:40:59 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 18:46:16 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,5 @@ char		*ft_itoa(int n)
 		i++;
 	}
 	str = (char*)malloc(sizeof(char) * i + 1);
-	if (str == NULL)
-		return (NULL);
-	return (ft_apply(n, str, isneg, i));
+	return (str == NULL ? NULL : ft_apply(n, str, isneg, i));
 }

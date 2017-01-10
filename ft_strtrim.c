@@ -6,13 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 23:04:56 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/10 07:12:00 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 18:42:23 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s)
+char	*ft_strtrim(char const *s)
 {
 	int i;
 	int index;
