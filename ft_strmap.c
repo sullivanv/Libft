@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 22:47:26 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/11/28 23:17:56 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 02:59:49 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*str;
 
 	i = 0;
+	if (!(s && f))
+		return (NULL);
 	str = (char*)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (str == NULL)
 		return (NULL);

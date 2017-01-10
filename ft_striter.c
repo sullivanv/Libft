@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 00:42:45 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/07 23:12:06 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 02:46:38 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,12 @@ void	ft_striter(char *s, void (*f)(char *))
 	int	i;
 
 	i = 0;
-	while (s[i])
+	if (s && f)
 	{
-		f(&s[i]);
-		i++;
+		while (s[i])
+		{
+			f(&s[i]);
+			i++;
+		}
 	}
 }

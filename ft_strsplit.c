@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/23 00:55:45 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/09 20:00:37 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 03:11:24 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ char		**ft_strsplit(char const *str, char c)
 	i = 0;
 	count = 0;
 	first = 0;
+	if (!str)
+		return (NULL);
 	while (str[i])
 	{
 		while ((str[i] == c) && str[i])

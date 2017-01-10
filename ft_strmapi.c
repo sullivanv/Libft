@@ -6,7 +6,7 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 22:51:22 by suvitiel          #+#    #+#             */
-/*   Updated: 2016/12/07 23:15:05 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 03:01:38 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 
 	i = 0;
+	if (!(s && f))
+		return (NULL);
 	str = (char*)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (str == NULL)
 		return (NULL);

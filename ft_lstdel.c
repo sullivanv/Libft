@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/28 22:59:32 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/10 03:08:12 by suvitiel         ###   ########.fr       */
+/*   Created: 2017/01/10 03:55:01 by suvitiel          #+#    #+#             */
+/*   Updated: 2017/01/10 03:57:15 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	char	*str;
-	size_t	i;
+	t_list	*list;
+	t_list	*tmp;
 
-	i = 0;
-	if (!s)
-		return (NULL);
-	str = (char*)malloc(sizeof(char) * len + 1);
-	if (str == NULL)
-		return (NULL);
-	while (i < len)
+	if (alst && del)
 	{
-		str[i] = s[start];
-		start++;
-		i++;
+		list = *alst;
+		while (list)
+		{
+			tmp = list->next;
+			del(list->content, list->content_size);
+			free(list);
+			list = tmp;
+		}
 	}
-	str[i] = '\0';
-	return (str);
+	*alst = NULL;
 }
