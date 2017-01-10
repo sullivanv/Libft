@@ -6,7 +6,7 @@
 #    By: suvitiel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/16 08:16:35 by suvitiel          #+#    #+#              #
-#    Updated: 2017/01/09 20:04:07 by suvitiel         ###   ########.fr        #
+#    Updated: 2017/01/10 04:18:45 by suvitiel         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -37,7 +37,10 @@ SRC		=	ft_putchar.c ft_strlen.c \
 			ft_memccpy.c ft_memmove.c \
 			ft_memchr.c ft_memcmp.c \
 			ft_strchr.c ft_strrchr.c \
-			ft_strnstr.c ft_itoa.c
+			ft_strnstr.c ft_itoa.c \
+			ft_lstnew.c ft_lstnew.c \
+			ft_lstdel.c ft_lstadd.c \
+			ft_lstiter.c ft_lstmap.c
 RM		= rm -f
 OBJS	= ft_putchar.o ft_strlen.o \
 			ft_putstr.o	ft_atoi.o \
@@ -64,7 +67,10 @@ OBJS	= ft_putchar.o ft_strlen.o \
 			ft_memccpy.o ft_memmove.o \
 			ft_memchr.o ft_memcmp.o \
 			ft_strchr.o ft_strrchr.o \
-			ft_strnstr.o ft_itoa.o
+			ft_strnstr.o ft_itoa.o \
+			ft_lstnew.o ft_lstnew.o \
+			ft_lstdel.o ft_lstadd.o \
+			ft_lstiter.o ft_lstmap.o
 CFLAGS	= -Wall -Wextra -Werror
 
 all:	$(NAME)
