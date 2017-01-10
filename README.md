@@ -1,5 +1,5 @@
 # Libft
-Librairie 42 - langage : C ------- TODO : • ------ 52 / 52 --- (0 / 5)
+Librairie 42 - langage : C ------- TODO : • ------ 52 / 52 --- (5 / 5)
 
 # - LibC :
 
@@ -7,7 +7,7 @@ memset,
 bzero,
 memcpy,
 memccpy,
-memmove (a tester),
+memmove,
 memchr,
 memcmp,
 strlen,
@@ -68,3 +68,5 @@ ft_putnbr_fd,
 • ft_lstiter
 
 # - Super-Bonus :
+• ft_strlowcase,
+• ft_strupcase
