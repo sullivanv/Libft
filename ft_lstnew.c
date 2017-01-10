@@ -6,13 +6,13 @@
 /*   By: suvitiel <suvitiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/10 03:39:06 by suvitiel          #+#    #+#             */
-/*   Updated: 2017/01/10 18:48:21 by suvitiel         ###   ########.fr       */
+/*   Updated: 2017/01/10 18:49:54 by suvitiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void const *content, size_t	content_size)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list *list;
 
